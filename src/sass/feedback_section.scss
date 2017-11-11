@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: rem(500px);
   color: $black_color;
   display: flex;
   overflow: hidden;
@@ -18,6 +17,11 @@
   position: relative;
   top: 0;
   left: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .left_item {
     position: absolute;
     top: rem(165px);
@@ -38,6 +42,7 @@
 }
 
 .feedback {
+  position: relative;
   max-width: rem(745px);
   width: 100%;
   background-color: #f6f6f6;
@@ -53,17 +58,42 @@
       line-height: 0.7;
       margin-bottom: rem(50px);
     }
-    input, textarea{
+    input, textarea {
       height: rem(40px);
       border: none;
-      background-color:#f6f6f6;
+      background-color: #f6f6f6;
       border-bottom: 1px solid #c4c4c4;
       font-size: rem(17px);
       font-weight: 400;
       line-height: 1.64;
       margin-bottom: rem(20px);
     }
+    button {
+      font-family: "Proxima Nova";
+      position: absolute;
+      right: rem(80px);
+      bottom: rem(40px);
+      width: rem(125px);
+      height: rem(40px);
+      font-size: rem(17px);
+      font-weight: 400;
+      line-height: 1.64;
+      text-transform: uppercase;
+      background-color: #f6f6f6;
+      border: rem(2px) solid $blue_color;
+    }
   }
 }
+
+.rigth {
+  max-width:rem(300px);
+  width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
 
 
