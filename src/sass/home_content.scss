@@ -1,0 +1,97 @@
+.home_content {
+  width: 100%;
+  height: 100%;
+
+  .main_title {
+    margin: rem(120px) 0 rem(130px) 0;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.content_menu {
+  padding-left: rem(80px);
+  border: 1px solid red;
+  display: flex;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  p {
+    font-size: rem(40px);
+    font-weight: 400;
+    text-align: center;
+    background-color: #ffffff;
+    width: rem(425px);
+    height: rem(85px);
+  }
+}
+
+.about_menu {
+  position: relative;
+  margin-top: rem(115px);
+  .about_img {
+    width: 100%;
+    &::before {
+      @include before_fig(100%, 60%, rgba(255, 255, 255, 0.36));
+    }
+  }
+  .about_text {
+    position: absolute;
+    bottom: 55%;
+  }
+}
+
+.project_menu {
+  position: relative;
+  .project_img {
+    width: 100%;
+    &::before {
+      @include before_fig(80%, 90%, rgba(255, 255, 255, 0.36));
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .project_text {
+    position: absolute;
+    bottom: 30%;
+    transform: rotate(-90deg);
+  }
+}
+
+.construction_menu {
+  position: relative;
+  padding-top: rem(70px);
+  .construction_img {
+    width: 100%;
+    &::before {
+      @include before_fig(80%, 80%, rgba(255, 255, 255, 0.36));
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .construction_text {
+    position: absolute;
+    bottom: 45%;
+    left: -20%;
+    transform: rotate(-90deg);
+  }
+}
+
+.contacts_menu {
+  position: relative;
+  padding-top: rem(180px);
+  .contacts_img {
+    width: 100%;
+    &::before {
+      @include before_fig(90%, 55%, rgba(255, 255, 255, 0.36));
+        bottom: 0;
+        left: 0;
+    }
+  }
+  .contacts_text {
+    position: absolute;
+    bottom: 30%;
+  }
+}

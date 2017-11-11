@@ -1,0 +1,74 @@
+.main_head {
+  position: absolute;
+  z-index: 3;
+  top: rem(40px);
+  width: 100%;
+  .head_menu {
+    position: relative;
+    max-width: rem(1200px);
+    margin: 0 auto;
+    height: rem(100px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $black_color;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: rem(-45px);
+      width: 0;
+      height: 0;
+      border-top: rem(100px) solid $black_color;
+      border-left: rem(45px) solid transparent;
+    }
+    &::after {
+      @include before_fig(rem(2px), 100%, $black_color);
+      left: rem(-1px);
+      top: 0;
+    }
+    .menu_nuv {
+
+      ul {
+        display: flex;
+
+        li {
+          position: relative;
+          color: $white_color;
+          font-size: rem(17px);
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-left: rem(45px);
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+          &::before {
+            @include before_fig(100%, rem(3px), $blue_color);
+            bottom: -100%;
+            opacity: 0;
+
+          }
+          &:hover {
+            color: $blue_color;
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .menu_language {
+      border: 1px solid chocolate;
+
+      ul {
+        li {
+          color: $blue_color;
+          font-size: rem(20px);
+          font-weight: 400;
+          text-transform: uppercase;;
+        }
+      }
+    }
+  }
+}
