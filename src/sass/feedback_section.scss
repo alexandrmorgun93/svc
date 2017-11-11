@@ -1,0 +1,69 @@
+.feedback_section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem(500px);
+  color: $black_color;
+  display: flex;
+  overflow: hidden;
+  img {
+
+  }
+}
+
+.left_content {
+  max-width: rem(875px);
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  .left_item {
+    position: absolute;
+    top: rem(165px);
+    right: rem(120px);
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  p {
+    font-family: "Proxima Nova";
+    font-size: rem(17px);
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: rem(40px);
+    width: rem(381px);
+  }
+}
+
+.feedback {
+  max-width: rem(745px);
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: rem(100px) rem(80px) 0;
+  display: flex;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: rem(40px);
+      font-weight: 400;
+      line-height: 0.7;
+      margin-bottom: rem(50px);
+    }
+    input, textarea{
+      height: rem(40px);
+      border: none;
+      background-color:#f6f6f6;
+      border-bottom: 1px solid #c4c4c4;
+      font-size: rem(17px);
+      font-weight: 400;
+      line-height: 1.64;
+      margin-bottom: rem(20px);
+    }
+  }
+}
+
+

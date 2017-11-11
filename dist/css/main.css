@@ -211,7 +211,6 @@ body {
 
 .content_menu {
   padding-left: 5rem;
-  border: 1px solid red;
   display: flex; }
   .content_menu img {
     width: 100%;
@@ -295,5 +294,61 @@ body {
   .contacts_menu .contacts_text {
     position: absolute;
     bottom: 30%; }
+
+.feedback_section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 31.25rem;
+  color: #000;
+  display: flex;
+  overflow: hidden; }
+
+.left_content {
+  max-width: 54.6875rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .left_content .left_item {
+    position: absolute;
+    top: 10.3125rem;
+    right: 7.5rem; }
+  .left_content h2 {
+    font-size: 40px;
+    font-weight: 400; }
+  .left_content p {
+    font-family: "Proxima Nova";
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 2.5rem;
+    width: 23.8125rem; }
+
+.feedback {
+  max-width: 46.5625rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 6.25rem 5rem 0;
+  display: flex; }
+  .feedback form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .feedback form h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 0.7;
+      margin-bottom: 3.125rem; }
+    .feedback form input, .feedback form textarea {
+      height: 2.5rem;
+      border: none;
+      background-color: #f6f6f6;
+      border-bottom: 1px solid #c4c4c4;
+      font-size: 1.0625rem;
+      font-weight: 400;
+      line-height: 1.64;
+      margin-bottom: 1.25rem; }
 
 /*# sourceMappingURL=main.css.map*/
