@@ -1,0 +1,37 @@
+.project_content {
+  margin-top: rem(170px);
+  width: 100%;
+  position: relative;
+  margin-bottom: rem(100px);
+}
+
+.slide_left {
+  display: flex;
+  .slide_text {
+    padding: rem(130px) rem(55px) 0 rem(380px);
+    width: 100%;
+    background-color: $black_color;
+
+  }
+
+}
+
+
+
+.slide_right {
+  display: flex;
+  justify-content: flex-end;
+  .slide_text {
+    padding: rem(130px) rem(80px);
+    width: 100%;
+    background-color: $black_color;
+  }
+}
+
+
+
+
+
+
+
+

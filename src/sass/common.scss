@@ -7,3 +7,77 @@ body {
   letter-spacing: 0.4px;
 
 }
+
+.main_section {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: rem(80px);
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
+  }
+}
+
+/*project slides*/
+.project_slide {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  width: rem(1600px);
+  display: flex;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .text_title {
+    font-size: rem(40px);
+    font-weight: 400;
+    color: $blue_color;
+  }
+
+  .text {
+    font-size: rem(17px);
+    font-weight: 400;
+    line-height: 1.64;
+    color: $white_color;
+    width: rem(380px);
+    margin-top: rem(50px);
+    font-family: $Proxima_Nova;
+  }
+
+  .slider_control {
+    margin-top: rem(40px);
+    position: relative;
+    display: flex;
+    .prev, .next {
+      width: rem(40px);
+      height: rem(40px);
+      border: 2px solid $white_color;
+      background-color: $black_color;
+      color: $white_color;
+      &:hover {
+        background-color: #fff;
+        color: $black_color
+      }
+    }
+    .prev {
+      border-right: 0;
+    }
+    .next {
+      border-left: 0;
+    }
+  }
+}
+
+/*----------------------*/

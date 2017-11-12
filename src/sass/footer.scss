@@ -1,0 +1,71 @@
+.main_footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: rem(100px) 0 rem(120px) 0;
+  border-bottom: rem(1px)solid  #c4c4c4;
+  .contacts {
+    margin-right: rem(210px);
+    .contacts_item {
+      font-size: rem(20px);
+      font-weight: 400;
+      line-height: 1.4;
+    }
+    .contacts_mail {
+      font-size: rem(20px);
+      font-weight: 400;
+      margin-top: rem(20px);
+    }
+  }
+  .footer_menu {
+    margin-right: rem(160px);
+    ul {
+      li {
+        font-size: rem(20px);
+        font-weight: 400;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+.footer_logo {
+  position: relative;
+  width: rem(685px);
+  height: rem(100px);
+  background-color: $black_color;
+  display: flex;
+  align-items: center;
+  padding-left: rem(45px);
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: rem(-45px);
+    width: 0;
+    height: 0;
+    border-top: rem(100px) solid $black_color;
+    border-left: rem(45px) solid transparent;
+  }
+  &::after {
+    @include before_fig(rem(2px), 100%, $black_color);
+    left: rem(-1px);
+    top: 0;
+  }
+}
+
+.made{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: rem(50px) 0 rem(100px) 0;
+    p{
+      font-size: rem(17px);
+      font-weight: 400;
+      line-height: 1.64;
+      color:$black_color;
+    }
+}

@@ -12,7 +12,7 @@
 }
 
 .left_content {
-  max-width: rem(875px);
+  min-width: 45%;
   width: 100%;
   position: relative;
   top: 0;
@@ -43,7 +43,7 @@
 
 .feedback {
   position: relative;
-  max-width: rem(745px);
+  nin-width: 40%;
   width: 100%;
   background-color: #f6f6f6;
   padding: rem(100px) rem(80px) 0;
