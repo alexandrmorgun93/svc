@@ -2,31 +2,31 @@
   margin-top: rem(170px);
   width: 100%;
   position: relative;
-  margin-bottom: rem(100px);
-}
-
-.slide_left {
   display: flex;
-  .slide_text {
-    padding: rem(130px) rem(55px) 0 rem(380px);
-    width: 100%;
-    background-color: $black_color;
-
-  }
-
-}
-
-
-
-.slide_right {
-  display: flex;
-  justify-content: flex-end;
-  .slide_text {
-    padding: rem(130px) rem(80px);
-    width: 100%;
-    background-color: $black_color;
+  flex-direction: column;
+  .slider {
+    &:nth-child(even) {
+      .slider_content {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+          .slide_text{
+            right: 0;
+            left: auto;
+          }
+        .slider_control{
+          left:30%;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      .slider_content {
+        justify-content: flex-end;
+      }
+    }
   }
 }
+
+
 
 
 

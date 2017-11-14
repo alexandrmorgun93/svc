@@ -2,11 +2,16 @@
 @import "сomponents-sass/functions";
 @import "сomponents-sass/mixin";
 @import "reset";
+@import "media";
 @import "common";
+@import "fonts";
 @import "header";
+@import "main_slider";
+@import "feedback_section";
 @import "home_section";
 @import "home_content";
-@import "feedback_section";
 @import "main_section";
 @import "project_content";
+@import "about_section";
+@import "contacts_section";
 @import "footer";

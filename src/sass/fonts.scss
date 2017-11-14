@@ -1,0 +1,17 @@
+/*Palatino linotype*/
+@font-face {
+  font-family: "Palatino Linotype";
+  src: url_css('fonts/palatinoNormal/Palatinolinotype.eot'),
+  url_css('fonts/palatinoNormal/Palatinolinotype.ttf'),
+  url_css('fonts/palatinoNormal/Palatinolinotype.wolf'),
+  url_css('fonts/palatinoNormal.Palatinolinotype.wolf2');
+}
+
+/*Proxima nova*/
+@font-face {
+  font-family: "Proxima Nova";
+  src: url_css('fonts/ProximaNova-Regular/ProximaNova-Regular.eot'),
+  url_css('fonts/ProximaNova-Regular/ProximaNova-Regular.svg'),
+  url_css('fonts/ProximaNova-Regular/ProximaNova-Regular.ttf'),
+  url_css('fonts/ProximaNova-Regular/ProximaNova-Regular.wolf');
+}
