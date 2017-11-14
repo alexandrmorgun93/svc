@@ -80,6 +80,43 @@ body {
 .feedback_section {
   margin-top: 7.5rem; }
 
+.feedback_form {
+  width: 50%;
+  max-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 5rem;
+  background-color: #f6f6f6; }
+  .feedback_form h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 0.7;
+    margin-bottom: 3.125rem; }
+  .feedback_form .form_item {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.64;
+    margin-bottom: 1.25rem; }
+  .feedback_form .btn {
+    font-family: "Proxima Nova";
+    padding: 0.625rem 1.875rem;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.64;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.125rem solid #25cccc;
+    cursor: pointer;
+    align-self: flex-end; }
+    .feedback_form .btn:hover {
+      color: #25cccc;
+      background-color: #fff; }
+
 /*Palatino linotype*/
 @font-face {
   font-family: "Palatino Linotype";
@@ -246,68 +283,28 @@ body {
     position: absolute;
     top: 0;
     left: 0; }
-
-.feedback_wrap {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  max-width: 75rem;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto; }
-  .feedback_wrap .feedback {
-    width: 50%;
-    max-width: 37.5rem;
+  .feedback_section .feedback_wrap {
     position: relative;
-    background-color: #f6f6f6;
-    padding: 6.25rem 5rem;
-    display: flex; }
-    .feedback_wrap .feedback .feedback_form {
-      width: 100%;
-      display: flex;
-      flex-direction: column; }
-      .feedback_wrap .feedback .feedback_form h2 {
-        font-size: 2.5rem;
-        font-weight: 400;
-        line-height: 0.7;
-        margin-bottom: 3.125rem; }
-      .feedback_wrap .feedback .feedback_form input, .feedback_wrap .feedback .feedback_form textarea {
-        width: 26.875rem;
-        height: 2.5rem;
-        border: none;
-        background-color: #f6f6f6;
-        border-bottom: 1px solid #c4c4c4;
-        font-size: 1.0625rem;
-        font-weight: 400;
-        line-height: 1.64;
-        margin-bottom: 1.25rem; }
-      .feedback_wrap .feedback .feedback_form button {
-        font-family: "Proxima Nova";
-        position: absolute;
-        right: 5rem;
-        bottom: 2.5rem;
-        width: 7.8125rem;
-        height: 2.5rem;
-        font-size: 1.0625rem;
-        font-weight: 400;
-        line-height: 1.64;
-        text-transform: uppercase;
-        background-color: #f6f6f6;
-        border: 0.125rem solid #25cccc;
-        cursor: pointer; }
-  .feedback_wrap .feedback_text {
-    width: 50%;
-    margin-top: 8.75rem; }
-    .feedback_wrap .feedback_text h2 {
-      font-size: 2.5rem;
-      font-weight: 400; }
-    .feedback_wrap .feedback_text p {
-      margin-top: 2.5rem;
-      font-family: "Proxima Nova";
-      width: 23.75rem;
-      font-size: 1.0625rem;
-      font-weight: 400;
-      line-height: 1.64; }
+    z-index: 3;
+    width: 100%;
+    max-width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; }
+
+.feedback_text {
+  width: 50%;
+  margin-top: 8.75rem; }
+  .feedback_text h2 {
+    font-size: 2.5rem;
+    font-weight: 400; }
+  .feedback_text p {
+    margin-top: 2.5rem;
+    font-family: "Proxima Nova";
+    width: 23.75rem;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.64; }
 
 .home_section {
   position: relative;
@@ -595,49 +592,28 @@ body {
     background-color: #000;
     display: flex; }
     .contacts_section .right_menu .feedback_form {
-      display: flex;
-      flex-direction: column;
       width: 80%;
       background-color: transparent;
-      align-self: center;
-      padding: 6.25rem 5rem; }
+      justify-content: center; }
       .contacts_section .right_menu .feedback_form h2 {
-        color: #ffffff;
-        font-size: 2.5rem;
-        font-weight: 400;
-        line-height: 0.7;
-        margin-bottom: 2.5rem; }
-      .contacts_section .right_menu .feedback_form input, .contacts_section .right_menu .feedback_form textarea {
-        padding-bottom: 0.625rem;
-        width: 26.875rem;
-        height: 2.5rem;
-        border: none;
-        background-color: #000;
-        color: #ffffff;
-        border-bottom: 1px solid #c4c4c4;
-        font-size: 1.0625rem;
-        font-weight: 400;
-        line-height: 1.64;
-        margin-bottom: 1.25rem; }
-      .contacts_section .right_menu .feedback_form button {
-        align-self: flex-end;
-        margin: 1.25rem 8.125rem 0 0;
-        font-family: "Proxima Nova";
-        width: 7.8125rem;
-        height: 2.5rem;
-        font-size: 1.0625rem;
-        font-weight: 400;
-        line-height: 1.64;
-        text-transform: uppercase;
+        color: #ffffff; }
+      .contacts_section .right_menu .feedback_form .form_item {
         background-color: transparent;
-        border: 0.125rem solid #ffffff;
         color: #ffffff;
-        cursor: pointer; }
+        padding-bottom: 0.9375rem; }
+      .contacts_section .right_menu .feedback_form .btn {
+        margin-top: 1.875rem;
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff; }
+        .contacts_section .right_menu .feedback_form .btn:hover {
+          color: #25cccc;
+          background-color: #fff; }
     .contacts_section .right_menu .logo {
       width: 100%;
       max-width: 18.75rem;
       position: absolute;
-      top: 10%;
+      top: 5%;
       right: 15%;
       opacity: .4; }
       .contacts_section .right_menu .logo img {

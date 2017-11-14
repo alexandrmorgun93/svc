@@ -97,16 +97,14 @@
             <p>If you’d like to contact us by email, please fill out the form below and we’ll get back to you within 24
                 hours.</p>
         </div>
-        <div class="feedback">
-            <form class="feedback_form" action="">
-                <h2>Feedback</h2>
-                <input type="text" name="name" placeholder="*Name" require
-                       pattern="^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$">
-                <input type="email" name="email" placeholder="*E-mail" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="*Message"></textarea>
-                <button type="submit">SUBMIT</button>
-            </form>
-        </div>
+        <form class="feedback_form" action="">
+            <h2>Feedback</h2>
+            <input class="form_item" type="text" name="name" placeholder="*Name" require
+                   pattern="^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$">
+            <input class="form_item" type="email" name="email" placeholder="*E-mail" required>
+            <textarea class="form_item" name="" id="" cols="30" rows="10" placeholder="*Message"></textarea>
+            <button class="btn" type="submit">SUBMIT</button>
+        </form>
     </div>
 </section>
 <!--END FEEDBACK SECTION-->

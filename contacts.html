@@ -71,35 +71,16 @@
     <div class="right_menu">
         <form class="feedback_form" action="">
             <h2>Feedback</h2>
-            <input type="text" placeholder="*Name">
-            <input type="email" placeholder="*E-mail">
-            <textarea cols="30" placeholder="*Message" rows="10"></textarea>
-            <button type="submit">SUBMIT</button>
+            <input class="form_item" type="text" name="name" placeholder="*Name" require
+                   pattern="^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$">
+            <input class="form_item" type="email" name="email" placeholder="*E-mail" required>
+            <textarea class="form_item" name="" id="" cols="30" rows="10" placeholder="*Message"></textarea>
+            <button class="btn" type="submit">SUBMIT</button>
         </form>
         <img class="logo" src="img/logo-min.svg" alt="">
     </div>
 </section>
 <!--END CONTACTS SECTION-->
-<!--BEGIN MAP-->
-<div id="map">
-
-</div>
-<script>
-    function initMap() {
-        var myCenter = {lat: 59.9138688, lng: 10.7522454};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: myCenter
-        });
-        var marker = new google.maps.Marker({
-            position: myCenter,
-            map: map
-        });
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8agsOOXa0UQP6YL2nUqrGY6xftyRjYgk&callback=initMap" async
-        defer></script>
-<!--END MAP-->
 <!--BEGIN FOOTER-->
 <footer class="main_footer">
     <div class="footer_head">
@@ -127,9 +108,5 @@
 </footer>
 <!--END FOOTER-->
 <script src="dist/js/main.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
-</script>
-
 </body>
 </html>
