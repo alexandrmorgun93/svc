@@ -22,10 +22,10 @@
         font-size: rem(20px);
         font-weight: 400;
         line-height: 1.4;
-        transition: .4;
+        transition: .4s;
         &:hover {
           color: $blue_color;
-          transition: .4;
+          transition: .4s;
         }
       }
     }

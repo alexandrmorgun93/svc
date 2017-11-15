@@ -1,11 +1,12 @@
 .main_section{
+  width: 100%;
   position: relative;
   width: 100%;
-  height: rem(645px);
+  height: rem(700px);
+  overflow: hidden;
     img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+
+      position: absolute;
     }
   .main_title{
     font-family: $Proxima_Nova;

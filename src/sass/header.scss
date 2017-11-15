@@ -40,13 +40,16 @@
           font-weight: 400;
           text-transform: uppercase;
           margin-left: rem(45px);
+          transition: .2s;
           &:nth-child(1) {
             margin-left: 0;
+
           }
           &::before {
-            @include before_fig(100%, rem(3px), $blue_color);
-            bottom: -100%;
+            @include before_fig(100%, rem(4px), $blue_color);
+            top: rem(60px);
             opacity: 0;
+            transition: .4s;
 
           }
           &:hover {
@@ -58,15 +61,49 @@
         }
       }
     }
-    .menu_language {
-      border: 1px solid chocolate;
+    .right_menu {
+      display: flex;
+      align-items: center;
+      .menu_language {
+        position: relative;
+        border: 1px solid chocolate;
 
-      ul {
-        li {
-          color: $blue_color;
-          font-size: rem(20px);
-          font-weight: 400;
-          text-transform: uppercase;;
+        ul {
+          li {
+            color: $blue_color;
+            font-size: rem(20px);
+            font-weight: 400;
+            text-transform: uppercase;;
+          }
+        }
+      }
+      .btn_mobile {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        display: none;
+        .btn1 {
+          width: rem(30px);
+          height: rem(4px);
+          background-color: $blue_color;
+          margin: 3px 0;
+          transition: .4s;
+
+        }
+        .btn2 {
+          width: rem(30px);
+          height: rem(4px);
+          background-color: $blue_color;
+          margin: 3px 0;
+          transition: .4s;
+        }
+        .btn3 {
+          width: rem(30px);
+          height: rem(4px);
+          background-color: $blue_color;
+          margin: 3px 0;
+          transition: .4s;
         }
       }
     }
