@@ -105,6 +105,7 @@ module.exports = __webpack_require__(4);
                 nav.classList.toggle('active');
             })
         }
+
        menuNav(btn,nav);
 })();
 

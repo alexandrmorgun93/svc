@@ -28,5 +28,6 @@
                 nav.classList.toggle('active');
             })
         }
+
        menuNav(btn,nav);
 })();
