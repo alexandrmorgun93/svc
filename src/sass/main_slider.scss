@@ -4,10 +4,13 @@
   bottom: 0;
   z-index: 1;
   width: 100%;
+  overflow: hidden;
+
   .slider_content {
     display: flex;
     justify-content: center;
     min-height: rem(578px);
+
     .slide_img {
       position: relative;
       width: 100%;
@@ -16,7 +19,8 @@
       overflow: hidden;
       display: flex;
       background-color: $black_color;
-      img {
+
+      .img_slide {
         position: absolute;
         top: 0;
         left: 0;
@@ -26,6 +30,7 @@
         object-fit: cover;
       }
     }
+
     .text_wrap {
       position: relative;
       width: 100%;
@@ -35,6 +40,7 @@
       justify-content: flex-end;
       overflow: hidden;
       background-color: $black_color;
+
       .slide_text {
         position: absolute;
         top: 0;
@@ -42,12 +48,14 @@
         padding: rem(90px) rem(90px) rem(120px);
         background-color: $black_color;
         max-width: rem(680px);
+
         .slide_title {
           font-size: rem(40px);
           font-weight: 400;
           color: $white_color;
           margin-bottom: rem(50px);
         }
+
         .title_item {
           font-size: rem(17px);
           font-weight: 400;
@@ -56,22 +64,26 @@
           font-family: "Proxima Nova";
         }
       }
+
       .slider_control {
         position: absolute;
         bottom: rem(100px);
         left: rem(92px);
         z-index: 2;
         display: flex;
-        .prev_slide, .next_slide {
+
+        .next_slide,
+        .prev_slide {
           width: rem(40px);
           height: rem(40px);
           border: 2px solid $white_color;
           background-color: $black_color;
           color: $white_color;
           cursor: pointer;
+
           &:hover {
             background-color: #fff;
-            color: $black_color
+            color: $black_color;
           }
         }
       }
