@@ -9,20 +9,26 @@
     .slider_content {
       .slide_img {
         .img_slide {
-          visibility: visible;
+          visibility: hidden;
+          opacity: 0;
+          transition: .5s;
+           &.active {
+            visibility: visible;
+            opacity: .9;
+          }
+          &:hover{
 
-          &.active {
-            visibility: hiden;
+            transform: scale(1.3);
           }
         }
       }
-
       .text_wrap {
         .slide_text {
-          visibility: visible;
-
+          visibility:hidden;
+          opacity: 0;
           &.active {
-            visibility: hiden;
+            visibility:visible;
+            opacity: .9;
           }
         }
       }
