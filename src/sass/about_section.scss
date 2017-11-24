@@ -12,6 +12,8 @@
   .about_content {
     position: relative;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     .about_img {
       display: block;
@@ -24,16 +26,21 @@
         height: 100%;
         top: 0;
         left: 0;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
       }
       &:first-child {
-        flex: 1 1 rem(487px);
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 rem(487px);
+                flex: 1 1 rem(487px);
         height: rem(508px);
         margin-top: rem(30px);
 
       }
       &:nth-child(2) {
-        flex: 1 1 rem(587px);
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 rem(587px);
+                flex: 1 1 rem(587px);
         height: rem(508px);
         margin-top: rem(80px);
       }
@@ -41,13 +48,24 @@
 
     .text_wrap {
       position: relative;
-      flex: 1 1 rem(848px);
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 rem(848px);
+              flex: 1 1 rem(848px);
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       .wrap_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: rem(100px) rem(20px) rem(100px) rem(100px);
         background-color: $black_color;
         position: relative;
@@ -55,8 +73,13 @@
         .about_text {
           position: relative;
           z-index: 3;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           .text_item {
             position: relative;
             margin-bottom: rem(15px);

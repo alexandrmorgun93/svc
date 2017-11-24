@@ -7,8 +7,12 @@
   overflow: hidden;
 
   .slider_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-height: rem(578px);
 
     .slide_img {
@@ -17,6 +21,8 @@
       max-width: rem(766px);
       height: rem(578px);
       overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       background-color: $black_color;
 
@@ -24,16 +30,20 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         opacity: 0;
+        -webkit-transition: .4s;
         transition: .4s;
         visibility: hidden;
         &.active {
           visibility: visible;
           opacity: .9;
           &:hover {
-            transform: scale(1.3);
-            filter: grayscale(50%)sepia(80%);
+            -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+            -webkit-filter: grayscale(50%)sepia(80%);
+                    filter: grayscale(50%)sepia(80%);
           }
         }
       }
@@ -43,9 +53,16 @@
       position: relative;
       width: 100%;
       max-width: rem(847px);
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
       overflow: hidden;
       background-color: $black_color;
 
@@ -62,7 +79,8 @@
           left:0;
           visibility: visible;
           opacity: .9;
-          animation: slideTitle 1.5s ;
+          -webkit-animation: slideTitle 1.5s ;
+                  animation: slideTitle 1.5s ;
         }
 
         .slide_title {
@@ -73,6 +91,14 @@
           margin-bottom: rem(50px);
 
         }
+  @-webkit-keyframes slideTitle {
+    0%{
+     top:-100%;
+    }
+    100%{
+      top:0;
+    }
+  }
   @keyframes slideTitle {
     0%{
      top:-100%;
@@ -96,6 +122,8 @@
         bottom: rem(100px);
         left: rem(92px);
         z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         .next_slide,

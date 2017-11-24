@@ -1,42 +1,70 @@
 .main_footer {
   width: 100%;
   position: relative;
+
   .footer_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: rem(100px) 0 rem(125px) 30%;
+
     .footer_contacts {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       font-size: rem(20px);
       font-weight: 400;
       line-height: 1.4;
+
       span {
         margin-bottom: rem(20px);
       }
     }
+
     .footer_menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+
       a {
         font-size: rem(20px);
         font-weight: 400;
         line-height: 1.4;
-        transition: .4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+
         &:hover {
           color: $blue_color;
-          transition: .4s;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
         }
       }
     }
+
     .footer_logo {
       position: relative;
       width: rem(600px);
       height: rem(100px);
       background-color: $black_color;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding-left: rem(45px);
+
       &::before {
         content: "";
         display: block;
@@ -47,6 +75,7 @@
         border-top: rem(100px) solid $black_color;
         border-left: rem(45px) solid transparent;
       }
+
       &::after {
         @include before_fig(rem(2px), 100%, $black_color);
         left: rem(-1px);
@@ -54,12 +83,17 @@
       }
     }
   }
+
   .footer_bottom {
     border-top: rem(1px) solid #c4c4c4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
-    padding: rem(50px) 0 rem(100px) 0;
+    padding: rem(50px) 0 rem(100px);
+
     p {
       font-size: rem(17px);
       font-weight: 400;
@@ -68,4 +102,3 @@
     }
   }
 }
-
